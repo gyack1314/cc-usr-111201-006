@@ -1,0 +1,155 @@
+{
+  "root": "root",
+  "nodes": [
+    {
+      "id": "root",
+      "period": 0,
+      "children": [
+        {
+          "id": "low",
+          "probability": "0"
+        },
+        {
+          "id": "high",
+          "probability": "1"
+        }
+      ],
+      "operating_cash": {
+        "0": "0",
+        "1": "8",
+        "2": "6",
+        "3": "4"
+      },
+      "budget": "24",
+      "purchase_cost": "12",
+      "salvage_per_unit": "0"
+    },
+    {
+      "id": "low",
+      "period": 1,
+      "children": [
+        {
+          "id": "ll",
+          "probability": "1/2"
+        },
+        {
+          "id": "lh",
+          "probability": "1/2"
+        }
+      ],
+      "operating_cash": {
+        "0": "0",
+        "1": "8",
+        "2": "6",
+        "3": "4"
+      },
+      "budget": "24",
+      "purchase_cost": "12",
+      "salvage_per_unit": "0"
+    },
+    {
+      "id": "high",
+      "period": 1,
+      "children": [
+        {
+          "id": "hl",
+          "probability": "1/4"
+        },
+        {
+          "id": "hh",
+          "probability": "3/4"
+        }
+      ],
+      "operating_cash": {
+        "0": "0",
+        "1": "8",
+        "2": "16",
+        "3": "14"
+      },
+      "budget": "24",
+      "purchase_cost": "12",
+      "salvage_per_unit": "0"
+    },
+    {
+      "id": "ll",
+      "period": 2,
+      "children": [],
+      "operating_cash": {
+        "0": "0",
+        "1": "-2",
+        "2": "-4",
+        "3": "-6"
+      },
+      "budget": "24",
+      "purchase_cost": "12",
+      "salvage_per_unit": "3"
+    },
+    {
+      "id": "lh",
+      "period": 2,
+      "children": [],
+      "operating_cash": {
+        "0": "0",
+        "1": "8",
+        "2": "16",
+        "3": "14"
+      },
+      "budget": "24",
+      "purchase_cost": "12",
+      "salvage_per_unit": "3"
+    },
+    {
+      "id": "hl",
+      "period": 2,
+      "children": [],
+      "operating_cash": {
+        "0": "0",
+        "1": "8",
+        "2": "6",
+        "3": "4"
+      },
+      "budget": "24",
+      "purchase_cost": "12",
+      "salvage_per_unit": "3"
+    },
+    {
+      "id": "hh",
+      "period": 2,
+      "children": [],
+      "operating_cash": {
+        "0": "0",
+        "1": "8",
+        "2": "16",
+        "3": "24"
+      },
+      "budget": "24",
+      "purchase_cost": "12",
+      "salvage_per_unit": "3"
+    }
+  ],
+  "initial_installed": 0,
+  "capacity_limit": 3,
+  "actions": [
+    0,
+    1,
+    2
+  ],
+  "rate": "1/10",
+  "alpha": "4/5",
+  "loss_limit": "25",
+  "max_policies": 1000000,
+  "illustrative_cash": [
+    {
+      "period": 0,
+      "amount": "-12"
+    },
+    {
+      "period": 1,
+      "amount": "8"
+    },
+    {
+      "period": 2,
+      "amount": "11"
+    }
+  ]
+}
